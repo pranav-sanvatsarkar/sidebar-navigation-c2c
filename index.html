@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Test sidebar navigation</title>
+		<link rel="stylesheet" type="text/css" href="vendor_css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="application_css/sidebar-navigation.css">
+		<script type="text/javascript" src="vendor_js/jquery/jquery.js"></script>
+		<script type="text/javascript">
+			//$( ".app-sidebar" ).css("display","none");
+			function toggleSideBar()
+			{
+				if($( ".app-sidebar" ).css('display') != 'none')
+					$( ".app-sidebar" ).css("display", "none");
+				else
+					$( ".app-sidebar" ).css("display","inline-block");
+			}
+		</script>
+	</head>
+	<body>
+		<div class="main-container">
+			<div class="app-container">
+				
+				<div class="app-header">
+					<div class="app-sidebar">
+						Sidebar
+					</div>
+					<span style="margin-top: 10px;display: inline-block;margin-left: 10px">
+						<span id="menuBttn" onclick="toggleSideBar();" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+					</span>	
+				</div>
+			</div>
+		</div>
+	</body>
+</html
