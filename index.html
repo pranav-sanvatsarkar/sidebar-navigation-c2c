@@ -9,24 +9,30 @@
 			function toggleSideBar()
 			{
 				if($( ".app-sidebar" ).css('display') != 'none')
+				{
+					$( "#menuBttn" ).css("margin-left", "10px");
 					$( ".app-sidebar" ).css("display", "none");
+				}
 				else
+				{
+					$( "#menuBttn" ).css("margin-left", "210px");
+					$( ".app-sidebar" ).css("position", "absolute");
+					$( ".app-sidebar" ).css("top", 0);
+					$( ".app-sidebar" ).css("bottom", 0);
 					$( ".app-sidebar" ).css("display","inline-block");
+				}
 			}
 		</script>
 	</head>
 	<body>
 		<div class="main-container">
-			<div class="app-container">
-				
-				<div class="app-header">
-					<div class="app-sidebar">
-						Sidebar
-					</div>
-					<span style="margin-top: 10px;display: inline-block;margin-left: 10px">
-						<span id="menuBttn" onclick="toggleSideBar();" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-					</span>	
+			<div class="app-header">
+				<div class="app-sidebar" style="padding: 5px 0px 0px 5px;">
+					Sidebar
 				</div>
+				<span style="margin-top: 10px;display: inline-block;margin-left: 10px;">
+					<span id="menuBttn" onclick="toggleSideBar();" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+				</span>	
 			</div>
 		</div>
 	</body>
