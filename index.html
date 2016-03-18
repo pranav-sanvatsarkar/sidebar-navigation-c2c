@@ -23,6 +23,11 @@
 					$( ".app-sidebar" ).css("display","inline-block");
 				}
 			}
+			function closeSideBar()
+			{
+				$( "#menuBttn" ).css("margin-left", "8px");
+				$( ".app-sidebar" ).css("display", "none");
+			}
 		</script>
 	</head>
 	<body>
@@ -30,11 +35,10 @@
 			<div class="app-header">
 				<div class="app-sidebar" style="padding: 5px 0px 0px 5px;">
 					<div class="logo">
-						Logo
+						Cradles to Crayons
 					</div>
 					<div class="navigation-menus">
 						<ul>
-							<li></li>
 							<li><span class="glyphicon glyphicon-align-left" aria-hidden="true" style="margin-right: 10px"></span>My Orders</li>
 							<li><span class="glyphicon glyphicon-globe" aria-hidden="true" style="margin-right: 10px"></span>Knowledge</li>
 							<li><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" style="margin-right: 10px"></span>Feeds<span class="badge">4</span></li>
@@ -44,9 +48,12 @@
 						</ul>
 					</div>
 				</div>
-				<span style="margin-top: 10px;display: inline-block">
-					<span id="menuBttn" onclick="toggleSideBar();" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" style="margin-left:8px"></span>
+				<span class="menuBttnCntnr">
+					<span id="menuBttn" onclick="toggleSideBar();" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" style=""></span>
 				</span>	
+			</div>
+			<div class="container" onclick="closeSideBar();">
+				
 			</div>
 		</div>
 	</body>
