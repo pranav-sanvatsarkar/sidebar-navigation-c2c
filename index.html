@@ -1,22 +1,22 @@
 <html>
 	<head>
 		<title>Test sidebar navigation</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="vendor_css/bootstrap/bootstrap.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.5">
+		<link rel="stylesheet" type="text/css" href="vendor_css/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="application_css/sidebar-navigation.css">
 		<script type="text/javascript" src="vendor_js/jquery/jquery.js"></script>
 		<script type="text/javascript">
-			//$( ".app-sidebar" ).css("display","none");
+			//$( "#menuBttn" ).css("margin-left", "8px");	
 			function toggleSideBar()
 			{
 				if($( ".app-sidebar" ).css('display') != 'none')
 				{
-					$( "#menuBttn" ).css("margin-left", "10px");
+					$( "#menuBttn" ).css("margin-left", "8px");
 					$( ".app-sidebar" ).css("display", "none");
 				}
 				else
 				{
-					$( "#menuBttn" ).css("margin-left", "210px");
+					$( "#menuBttn" ).css("margin-left", "205px");
 					$( ".app-sidebar" ).css("position", "absolute");
 					$( ".app-sidebar" ).css("top", 0);
 					$( ".app-sidebar" ).css("bottom", 0);
@@ -29,10 +29,23 @@
 		<div class="main-container">
 			<div class="app-header">
 				<div class="app-sidebar" style="padding: 5px 0px 0px 5px;">
-					Sidebar
+					<div class="logo">
+						Logo
+					</div>
+					<div class="navigation-menus">
+						<ul>
+							<li></li>
+							<li><span class="glyphicon glyphicon-align-left" aria-hidden="true" style="margin-right: 10px"></span>My Orders</li>
+							<li><span class="glyphicon glyphicon-globe" aria-hidden="true" style="margin-right: 10px"></span>Knowledge</li>
+							<li><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true" style="margin-right: 10px"></span>Feeds<span class="badge">4</span></li>
+							<li><span class="glyphicon glyphicon-envelope" aria-hidden="true" style="margin-right: 10px"></span>Messages<span class="badge">15</span></li>
+							<li><span class="glyphicon glyphicon-user" aria-hidden="true" style="margin-right: 10px"></span>My Profile</li>
+							<li><span class="glyphicon glyphicon-off" aria-hidden="true" style="margin-right: 10px"></span>Logout</li>
+						</ul>
+					</div>
 				</div>
-				<span style="margin-top: 10px;display: inline-block;margin-left: 10px;">
-					<span id="menuBttn" onclick="toggleSideBar();" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+				<span style="margin-top: 10px;display: inline-block">
+					<span id="menuBttn" onclick="toggleSideBar();" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" style="margin-left:8px"></span>
 				</span>	
 			</div>
 		</div>

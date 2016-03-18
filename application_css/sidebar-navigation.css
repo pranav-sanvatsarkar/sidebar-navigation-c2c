@@ -38,3 +38,50 @@ body, div
     display: inline-block;
     height: 700px;
 }
+.logo
+{
+	display: inline-block;
+	border: 1px solid white;
+	width: 98%;
+	height: 80px;
+	text-align: center;
+	font-size: 40px;
+	padding-top: 9px;
+	border-radius: 5px;
+}
+.navigation-menus
+{
+	display: inline-block;
+	margin-top: 5px;
+	border: 0px solid white;
+	width: 98%;
+	height: 350px;
+}
+.navigation-menus ul
+{
+	padding-left: 0px;
+}
+.navigation-menus li
+{
+    display: block;
+    padding: 10px 0px 10px 10px;
+    border: 0px solid;
+}
+.navigation-menus li:hover
+{
+    background-color: white;
+    color: purple;
+    border-radius: 5px;
+}
+.navigation-menus li .badge
+{
+    float: right;
+    margin-right: 10px;
+    background-color: white;
+    color: purple;
+}
+.navigation-menus li:hover .badge
+{
+    background-color: purple;
+    color: white;
+}
