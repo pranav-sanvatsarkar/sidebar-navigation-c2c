@@ -3,6 +3,15 @@ body, div
 	margin: 0px;
 	padding: 0px;
 }
+img
+{
+    width: 130px;
+    height: 160px;
+    margin: 5px;
+    border: 1px solid #eee;
+    background-color: #eee;
+    padding: 5px;
+}
 .main-container
 {
 	position: absolute;
@@ -10,6 +19,7 @@ body, div
 	bottom: 0;
 	width: 100%;
 	background-color: white;
+	text-align: center;
 }
 .app-header
 {
@@ -29,6 +39,7 @@ body, div
 	color: white;
 	width: 200px;
 	display: none;
+	z-index: 100;
 }
 .app-container
 {
@@ -40,7 +51,7 @@ body, div
 }
 .logo
 {
-    /*background-color: white;*/
+    /*background-color: white;
     background-size: 100%;
     display: inline-block;
     border: 1px solid white;
@@ -52,6 +63,7 @@ body, div
     border-radius: 5px;
     cursor: pointer;
     /*background-image: url("../application_img/logo.png")*/
+    height: 40px;
 }
 .navigation-menus
 {
@@ -92,7 +104,7 @@ body, div
 }
 .menuBttnCntnr
 {
-	margin-top: 10px;
+	margin: 10px 0px 16px 0px;
 	display: inline-block
 }
 .menuBttnCntnr
@@ -106,6 +118,44 @@ body, div
 .container
 {
 	display: inline-block;
-	width: 100%;
+	width: 80%;
 	height: 92%;
+	padding: 2%;
+	padding: 1%;
+}
+.userInfoTable
+{
+	border: 1px solid gray;
+	border-radius: 5px;
+	
+}
+.userInfoTable .row
+{
+	text-align: left;
+	margin: 0px;
+}
+.userInfoTable .col-md-12
+{
+    margin: 0px;
+    border-radius: 3px 3px 0px 0px;
+    color: white;
+    padding: 10px;
+}
+.userInfoTable .row .col-md-3, .col-md-9
+{
+	padding: 10px;
+}
+.userInfoTable .row .col-md-3
+{
+	text-align: center;
+}
+.overlay
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	background-color: black;
+	z-index: 90;
+	display: none;
 }
